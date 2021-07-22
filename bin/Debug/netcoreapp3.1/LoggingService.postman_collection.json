@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "f63cd1fd-e8ff-423e-9f66-8619e3ed6362",
+		"name": "LoggingService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:5001/Logging",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StartDate\": \"2001-07-20\", \r\n    \"EndDate\": \"2009-07-20\",\r\n    \"Text\": \"text\", \r\n    \"Level\": \"936da01f-9abd-4d9d-80c7-02af85c822a8\",\r\n    \"ActionSource\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Logging",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Logging"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/Logging?id=f47029e5-28bb-4ed0-9e4b-b2a502b03977&id=98e2f1fc-15cd-4e4a-bfe5-a195d0f41629",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StartDate\": \"2015-07-20\", \r\n    \"EndDate\": \"2015-07-20\",\r\n    \"Text\": \"text\", \r\n    \"Level\": \"bdec17cf-1e75-4bb4-812b-0451cff200a3\",\r\n    \"ActionSource\": \"text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Logging?id=f47029e5-28bb-4ed0-9e4b-b2a502b03977&id=98e2f1fc-15cd-4e4a-bfe5-a195d0f41629",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Logging"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "f47029e5-28bb-4ed0-9e4b-b2a502b03977"
+						},
+						{
+							"key": "id",
+							"value": "98e2f1fc-15cd-4e4a-bfe5-a195d0f41629"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/LoggingSearch?startDate=&EndDate=&Text=&Level=",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StartDate\": \"2015-07-20\", \r\n    \"EndDate\": \"2015-07-20\",\r\n    \"Text\": \"text\", \r\n    \"Level\": \"bdec17cf-1e75-4bb4-812b-0451cff200a3\",\r\n    \"ActionSource\": \"text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/LoggingSearch?startDate=&EndDate=&Text=&Level=",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"LoggingSearch"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": ""
+						},
+						{
+							"key": "EndDate",
+							"value": ""
+						},
+						{
+							"key": "Text",
+							"value": ""
+						},
+						{
+							"key": "Level",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/LoggingStatistic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StartDate\": \"2015-07-20\", \r\n    \"EndDate\": \"2015-07-20\",\r\n    \"Text\": \"text\", \r\n    \"Level\": \"bdec17cf-1e75-4bb4-812b-0451cff200a3\",\r\n    \"ActionSource\": \"text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/LoggingStatistic",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"LoggingStatistic"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "EndDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "Text",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "Level",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

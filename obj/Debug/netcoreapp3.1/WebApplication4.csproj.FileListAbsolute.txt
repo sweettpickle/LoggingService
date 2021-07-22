@@ -1,0 +1,10 @@
+C:\Users\sweet\source\repos\WebApplication4\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sweet\source\repos\WebApplication4\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sweet\source\repos\WebApplication4\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\sweet\source\repos\WebApplication4\bin\Debug\netcoreapp3.1\WebApplication4.exe
+C:\Users\sweet\source\repos\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.csprojAssemblyReference.cache
+C:\Users\sweet\source\repos\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.AssemblyInfoInputs.cache
+C:\Users\sweet\source\repos\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.AssemblyInfo.cs
+C:\Users\sweet\source\repos\WebApplication4\obj\Debug\netcoreapp3.1\WebApplication4.RazorTargetAssemblyInfo.cache
+C:\Users\sweet\source\repos\WebApplication4\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication4.StaticWebAssets.Manifest.cache
+C:\Users\sweet\source\repos\WebApplication4\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication4.StaticWebAssets.xml
