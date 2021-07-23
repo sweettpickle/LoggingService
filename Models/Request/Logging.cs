@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LoggingService.Models.Request
+namespace ApiLogging.Models.Request
 {
     public class Logging
     {
@@ -13,6 +13,6 @@ namespace LoggingService.Models.Request
         public DateTime EndDate { get; set; }
         public string Text { get; set; }
         public Guid Level { get; set; }
-        public string ActionSource { get; set; } = string.Empty;
+        public string ActionSource { get; set; }
     }
 }

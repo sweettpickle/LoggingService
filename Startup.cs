@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiLogging.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace LoggingService
+namespace ApiLogging
 {
     public class Startup
     {
@@ -65,6 +66,8 @@ namespace LoggingService
                 op.UseNpgsql("Host=localhost;Port=5432;Database=logging;Username=postgres;Password=root");
                 op.LogTo(Console.WriteLine, LogLevel.Information);
             });
+
+            serviceCollection.AddScoped<LoggingService>();
         }
     }
 }

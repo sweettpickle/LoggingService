@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GldrnXDSFMpEv/W7puCP65TbrVGiPbIGSDzJJA/LiiulwORg/cCV+PBJzG9rHt/O8R9ua+YT/PP4WJkiCpshYA==",
+  "dgSpecHash": "Q4lGugl/Rf7bL1YwYALbioBHw8uwEOw3wDhrA9CKYB/x1mLwvJGleXWl63sBONFK76wycOelmanLGVg4ZV5wnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sweet\\source\\repos\\LoggingService\\LoggingService.csproj",
+  "projectFilePath": "C:\\Users\\sweet\\source\\repos\\LoggingService\\ApiLogging.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sweet\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\sweet\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",

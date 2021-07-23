@@ -687,9 +687,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sweet\\source\\repos\\LoggingService\\LoggingService.csproj",
-      "projectName": "LoggingService",
-      "projectPath": "C:\\Users\\sweet\\source\\repos\\LoggingService\\LoggingService.csproj",
+      "projectUniqueName": "C:\\Users\\sweet\\source\\repos\\LoggingService\\ApiLogging.csproj",
+      "projectName": "ApiLogging",
+      "projectPath": "C:\\Users\\sweet\\source\\repos\\LoggingService\\ApiLogging.csproj",
       "packagesPath": "C:\\Users\\sweet\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sweet\\source\\repos\\LoggingService\\obj\\",
       "projectStyle": "PackageReference",

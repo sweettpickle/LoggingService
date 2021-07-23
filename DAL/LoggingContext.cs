@@ -1,18 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LoggingService.DAL
+namespace ApiLogging.DAL
 {
     public class LoggingContext : DbContext
     {
-        public DbSet<Logging> Logging { get; set; }
-        public DbSet<LoggingLevel> LoggingLevel { get; set; }
-        public DbSet<ActionSource> ActionSource { get; set; }
-
         public LoggingContext(DbContextOptions options) : base(options)
         {
             //Database.EnsureDeleted();
@@ -28,9 +23,9 @@ namespace LoggingService.DAL
         {
             modelBuilder.Entity<Logging>();
 
-            modelBuilder.Entity<LoggingLevel>().Property(c => c.Name);
+            modelBuilder.Entity<LoggingLevel>();
 
-            modelBuilder.Entity<ActionSource>().Property(c => c.Name);
+            modelBuilder.Entity<ActionSource>();
         }
     }
 }
