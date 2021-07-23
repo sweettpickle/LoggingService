@@ -25,12 +25,12 @@ namespace LoggingService.Controllers
             if (request.StartDate >= request.EndDate)
                 return BadRequest(new Base("Поле StartDate не может быть больше EndDate"));
 
+            if (string.IsNullOrEmpty(request.ActionSource))
+                return BadRequest(new Base("Поле ActionSource обязательно для заполнения"));
+
             var level = LoggingContext.LoggingLevel.FirstOrDefault(x => x.Id.Equals(request.Level));
             if (level is null)
                 return NotFound(new Base("Такого уровня логирования не существует"));
-
-            if (request.ActionSource is null)
-                request.ActionSource = "";
 
             //так как источник действия это скорее всего какой-то сервис, который необходимо логировать,
             //то вместо текста лучше передавать его идентификатор, потому что это безопаснее,

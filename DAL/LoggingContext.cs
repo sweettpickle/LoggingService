@@ -28,9 +28,9 @@ namespace LoggingService.DAL
         {
             modelBuilder.Entity<Logging>();
 
-            modelBuilder.Entity<LoggingLevel>().Property(c => c.Name).UseCollation("SQL_Latin1_General_CP1_CS_AS");
+            modelBuilder.Entity<LoggingLevel>().Property(c => c.Name);
 
-            modelBuilder.Entity<ActionSource>().Property(c => c.Name).UseCollation("SQL_Latin1_General_CP1_CS_AS");
+            modelBuilder.Entity<ActionSource>().Property(c => c.Name);
         }
     }
 }

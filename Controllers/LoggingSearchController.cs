@@ -26,11 +26,8 @@ namespace LoggingService.Controllers
         [FromQuery] Guid? level,
         [FromQuery] string text = "")
         {
-            if (text is null)
-                text = "";
-
             var response = LoggingContext.Logging.Where(x => x.StartDate >= startDate && x.EndDate <= EndDate
-                                            || x.Level.Id.Equals(level) || x.Text.ToLower().Equals(text.ToLower()))
+                                            || x.Level.Id.Equals(level) || (text != null && x.Text.ToLower().Equals(text.ToLower())))
                             .Include(x => x.Level).Include(x => x.ActionSource).ToList();
 
             if (response is null)
